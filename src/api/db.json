@@ -1,53 +1,53 @@
 {
-  "users": [
+  "users": [ // Lista de usuários
     {
-      "name": "Sobhan name",
-      "username": "Sobhan",
-      "email": "sobhan@yahoo.com",
-      "phone": "9893548125",
-      "companiesId": "1",
-      "id": 1
+      "name": "Sobhan name", // Nome completo do usuário
+      "username": "Sobhan", // Nome de usuário (login)
+      "email": "sobhan@yahoo.com", // E-mail do usuário
+      "phone": "9893548125", // Telefone de contato
+      "companiesId": "1", // ID da empresa à qual o usuário está associado
+      "id": 1 // Identificador único do usuário
     },
     {
-      "name": "Nastaran name",
-      "username": "Nastaran",
-      "email": "nasi@gmail.com",
-      "phone": "9893878452",
-      "companiesId": "2",
-      "id": 4
+      "name": "Nastaran name", // Nome completo do segundo usuário
+      "username": "Nastaran", // Nome de usuário
+      "email": "nasi@gmail.com", // E-mail de contato
+      "phone": "9893878452", // Telefone de contato
+      "companiesId": "2", // ID da empresa à qual o usuário está associado
+      "id": 4 // Identificador único do usuário
     },
     {
-      "id": 5,
-      "name": "Sobhan name",
-      "username": "Sobhan",
-      "email": "sobhan@yahoo.com",
-      "phone": "989354812514",
-      "companiesId": "3"
+      "id": 5, // ID único do terceiro usuário
+      "name": "Sobhan name", // Nome completo do usuário
+      "username": "Sobhan", // Nome de usuário
+      "email": "sobhan@yahoo.com", // E-mail do usuário
+      "phone": "989354812514", // Telefone de contato, com um erro no formato (muito longo)
+      "companiesId": "3" // ID da empresa associada ao usuário
     },
     {
-      "name": "Luis Javier Tovar",
-      "username": "",
-      "email": "luisjavier_tovar@outlook.com",
-      "phone": "1234567899",
-      "companiesId": "1",
-      "id": 6
+      "name": "Luis Javier Tovar", // Nome completo do quarto usuário
+      "username": "", // Nome de usuário está vazio, possivelmente um campo que precisa ser preenchido
+      "email": "luisjavier_tovar@outlook.com", // E-mail do usuário
+      "phone": "1234567899", // Telefone de contato
+      "companiesId": "1", // ID da empresa associada
+      "id": 6 // Identificador único do usuário
     }
   ],
-  "companies": [
+  "companies": [ // Lista de empresas
     {
-      "id": 1,
-      "name": "Romaguera-Crona",
-      "catchPhrase": "Multi-layered client-server neural-net"
+      "id": 1, // ID único da empresa
+      "name": "Romaguera-Crona", // Nome da empresa
+      "catchPhrase": "Multi-layered client-server neural-net" // Frase ou slogan da empresa
     },
     {
-      "id": 2,
-      "name": "Deckow-Crist",
-      "catchPhrase": "Proactive didactic contingency"
+      "id": 2, // ID único da empresa
+      "name": "Deckow-Crist", // Nome da empresa
+      "catchPhrase": "Proactive didactic contingency" // Frase ou slogan da empresa
     },
     {
-      "id": 3,
-      "name": "Keebler LLC",
-      "catchPhrase": "User-centric fault-tolerant solution"
+      "id": 3, // ID único da empresa
+      "name": "Keebler LLC", // Nome da empresa
+      "catchPhrase": "User-centric fault-tolerant solution" // Frase ou slogan da empresa
     }
   ]
 }
