@@ -1,61 +1,63 @@
 {
-	"users": [
+	"users": [ 
+		// Lista de objetos contendo informações sobre usuários
 		{
-			"id": 1,
-			"name": "Morad name",
-			"username": "Morad",
-			"email": "morad@april.biz",
-			"phone": "989143548471",
-			"companiesId": "1"
+			"id": 1,  // Identificador único do usuário
+			"name": "Morad name",  // Nome completo do usuário
+			"username": "Morad",  // Nome de usuário (login)
+			"email": "morad@april.biz",  // Email do usuário
+			"phone": "989143548471",  // Número de telefone do usuário
+			"companiesId": "1"  // Identificador da empresa associada a este usuário
 		},
 		{
-			"id": 2,
-			"name": "Farshad name",
+			"id": 2,  // Outro usuário com identificador único
+			"name": "Farshad name", 
 			"username": "Farshad",
 			"email": "farshad@gmail.com",
 			"phone": "989332548474",
-			"companiesId": "2"
+			"companiesId": "2"  // Associado a uma empresa diferente, cujo ID é 2
 		},
 		{
-			"id": 3,
+			"id": 3,  // Usuário adicional
 			"name": "Leila name",
 			"username": "Leila",
 			"email": "leila@april.biz",
 			"phone": "989215147848",
-			"companiesId": "2"
+			"companiesId": "2"  // Mesmo ID de empresa que o usuário anterior, indicando que ambos trabalham na mesma empresa
 		},
 		{
-			"id": 4,
+			"id": 4,  // Usuário com um identificador único
 			"name": "Nastaran name",
 			"username": "Nastaran",
 			"email": "nasi@gmail.com",
 			"phone": "989387845214",
-			"companiesId": "3"
+			"companiesId": "3"  // Associado à empresa com ID 3
 		},
 		{
-			"id": 5,
+			"id": 5,  // Último usuário nesta lista
 			"name": "Sobhan name",
 			"username": "Sobhan",
 			"email": "sobhan@yahoo.com",
 			"phone": "989354812514",
-			"companiesId": "3"
+			"companiesId": "3"  // Também associado à empresa com ID 3
 		}
 	],
 	"companies": [
+		// Lista de objetos contendo informações sobre empresas
 		{
-			"id": 1,
-			"name": "Romaguera-Crona",
-			"catchPhrase": "Multi-layered client-server neural-net"
+			"id": 1,  // Identificador único da empresa
+			"name": "Romaguera-Crona",  // Nome da empresa
+			"catchPhrase": "Multi-layered client-server neural-net"  // Frase de efeito da empresa
 		},
 		{
-			"id": 2,
-			"name": "Deckow-Crist",
-			"catchPhrase": "Proactive didactic contingency"
+			"id": 2,  // Empresa com identificador único
+			"name": "Deckow-Crist",  
+			"catchPhrase": "Proactive didactic contingency"  // Frase de efeito da empresa
 		},
 		{
-			"id": 3,
-			"name": "Keebler LLC",
-			"catchPhrase": "User-centric fault-tolerant solution"
+			"id": 3,  // Última empresa na lista
+			"name": "Keebler LLC",  
+			"catchPhrase": "User-centric fault-tolerant solution"  // Frase de efeito desta empresa
 		}
 	]
 }
