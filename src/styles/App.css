@@ -1,146 +1,160 @@
 :root {
-  --background-body: #E5E5E5;
-  --background-content: #1D1D1D;
-  --text-color: #292929;
-  --primary-color: #4DFF7C;
-  --second-color: #89DDFF;
+  /* Definição de variáveis de cores que podem ser reutilizadas em todo o CSS */
+  --background-body: #E5E5E5;  /* Cor de fundo do corpo */
+  --background-content: #1D1D1D;  /* Cor de fundo para conteúdo */
+  --text-color: #292929;  /* Cor principal do texto */
+  --primary-color: #4DFF7C;  /* Cor primária usada para elementos importantes como botões */
+  --second-color: #89DDFF;  /* Cor secundária usada em botões e outros elementos */
 }
 
 body {
-  margin: 0;
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-body);
-  color: var(--text-color);
+  /* Configurações globais para o corpo da página */
+  margin: 0;  /* Remove a margem padrão do body */
+  font-size: 1rem;  /* Define o tamanho padrão da fonte */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; /* Fontes seguras e modernas */
+  -webkit-font-smoothing: antialiased;  /* Suaviza as fontes em navegadores WebKit */
+  -moz-osx-font-smoothing: grayscale;  /* Suaviza as fontes em sistemas macOS */
+  background-color: var(--background-body);  /* Usa a variável para o fundo do body */
+  color: var(--text-color);  /* Usa a variável para a cor do texto */
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  height: 3.5rem;
-  top: 0px;
-  left: 0px;
-  background-color: var(--background-content);
-  color: var(--background-body);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  /* Estilos do cabeçalho da página */
+  position: fixed;  /* Fixa o header no topo da página */
+  width: 100%;  /* Largura completa */
+  height: 3.5rem;  /* Altura definida para o header */
+  top: 0px;  /* Alinha no topo */
+  left: 0px;  /* Alinha à esquerda */
+  background-color: var(--background-content);  /* Cor de fundo do header */
+  color: var(--background-body);  /* Cor do texto do header */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);  /* Adiciona uma sombra sutil */
+  z-index: 10;  /* Define a prioridade de empilhamento do header */
 }
 
 .header__content {
-  max-width: 1280px;
-  padding: 0 1rem;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  height: 3.5rem;
+  /* Container do conteúdo dentro do header */
+  max-width: 1280px;  /* Limita a largura máxima */
+  padding: 0 1rem;  /* Espaçamento horizontal */
+  margin: auto;  /* Centraliza o conteúdo */
+  display: flex;  /* Usa flexbox para organizar os itens */
+  justify-content: space-between;  /* Espaça os itens nas extremidades */
+  align-items: center;  /* Alinha os itens verticalmente */
+  position: relative;  /* Posição relativa para ajustes internos */
+  height: 3.5rem;  /* Altura igual à do header */
 }
 
 .logo {
-  font-size: 20px;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  color: var(--background-body);
+  /* Estilos para o logo no header */
+  font-size: 20px;  /* Tamanho da fonte */
+  display: flex;  /* Usa flexbox */
+  gap: 0.5rem;  /* Espaçamento entre os itens */
+  align-items: center;  /* Alinha os itens verticalmente */
+  color: var(--background-body);  /* Cor do texto */
 }
 
 main {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 3rem;
-  margin-top: 4.5rem;
-  padding: 2rem;
-  /* background-color: var(--background-content); */
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
-  border-radius: 3px;
+  /* Estilos principais para o conteúdo */
+  width: 80%;  /* Largura do conteúdo */
+  margin: auto;  /* Centraliza o conteúdo */
+  margin-bottom: 3rem;  /* Espaçamento inferior */
+  margin-top: 4.5rem;  /* Espaçamento superior, abaixo do header */
+  padding: 2rem;  /* Espaçamento interno */
+  /* Fundo e sombra foram comentados, mas poderiam ser aplicados para estilizar o fundo do main */
+  border-radius: 3px;  /* Bordas suavizadas */
 }
 
 form {
-  width: fit-content;
-  margin: auto;
+  /* Estilos para o formulário */
+  width: fit-content;  /* Largura ajustada ao conteúdo do formulário */
+  margin: auto;  /* Centraliza o formulário */
 }
 
 input, select {
-  border: none;
-  border-radius: 3px;
-  padding: 6px;
-  margin:  0 6px;
+  /* Estilos para campos de input e seleção */
+  border: none;  /* Remove bordas padrão */
+  border-radius: 3px;  /* Bordas suavizadas */
+  padding: 6px;  /* Espaçamento interno */
+  margin: 0 6px;  /* Espaçamento horizontal */
 }
 
 h3 {
-  text-align: center;
-  margin-top: 0;
+  /* Estilos para o título h3 */
+  text-align: center;  /* Centraliza o texto */
+  margin-top: 0;  /* Remove margem superior */
 }
 
 button {
-  background-color: var(--second-color);
-  color: var(--text-color);
-  border: none;
-  cursor: pointer;
-  border-radius: 3px;
-  font-weight: bold;
+  /* Estilos para botões */
+  background-color: var(--second-color);  /* Cor de fundo secundária */
+  color: var(--text-color);  /* Cor do texto */
+  border: none;  /* Remove borda */
+  cursor: pointer;  /* Mostra um cursor de ponteiro ao passar o mouse */
+  border-radius: 3px;  /* Bordas arredondadas */
+  font-weight: bold;  /* Texto em negrito */
 }
 
 .buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  gap: 0.5rem;
+  /* Contêiner para botões */
+  width: 100%;  /* Largura total */
+  display: flex;  /* Usa flexbox */
+  justify-content: space-around;  /* Espaça igualmente os botões */
+  gap: 0.5rem;  /* Espaçamento entre os botões */
 }
 
 .btn-submit {
-  background-color: var(--primary-color);
-  padding: 6px 12px;
-  cursor: pointer;
-  font-weight: bolder;
+  /* Estilos específicos para o botão de envio */
+  background-color: var(--primary-color);  /* Cor de fundo primária */
+  padding: 6px 12px;  /* Espaçamento interno */
+  cursor: pointer;  /* Cursor de ponteiro */
+  font-weight: bolder;  /* Texto ainda mais destacado em negrito */
 }
 
-button:hover,
-.btn-submit:hover {
-  opacity: 0.8;
+button:hover, .btn-submit:hover {
+  /* Efeito de hover (passar o mouse) nos botões */
+  opacity: 0.8;  /* Reduz a opacidade para dar um efeito visual */
 }
 
 .all-users {
-margin-top: 3rem;
+  /* Seção de usuários, com espaçamento superior */
+  margin-top: 3rem;
 }
 
-.titles,
-.row {
-  width: 100%;
-  display: flex;
-  text-align: center;
-}
-.titles{
-  font-weight: bold;
-  background-color: var(--text-color);
-  color: var(--background-body);
+.titles, .row {
+  /* Estilos para títulos e linhas de conteúdo */
+  width: 100%;  /* Largura total */
+  display: flex;  /* Usa flexbox */
+  text-align: center;  /* Centraliza o texto */
 }
 
-.titles div,
-.row input,
-.row select,
-  .row div{
-  width: 20%;
-  padding: 0.5rem;
+.titles {
+  /* Estilos para a linha de títulos */
+  font-weight: bold;  /* Negrito */
+  background-color: var(--text-color);  /* Fundo na cor do texto */
+  color: var(--background-body);  /* Texto na cor do fundo do body */
+}
+
+.titles div, .row input, .row select, .row div {
+  /* Estilos para colunas, inputs e selects dentro das linhas */
+  width: 20%;  /* Largura de cada item */
+  padding: 0.5rem;  /* Espaçamento interno */
 }
 
 .hide-form {
-  display: none;
+  /* Classe para esconder o formulário */
+  display: none;  /* Esconde o formulário */
 }
 
 @media screen and (max-width: 920px) {
+  /* Estilos para telas menores que 920px */
   main {
-    width: 90%;
+    width: 90%;  /* Ajusta a largura para ocupar mais espaço */
   }
 }
 
 @media screen and (max-width: 520px) {
+  /* Estilos para telas menores que 520px */
   main {
-    width: 100%;
+    width: 100%;  /* Ocupa toda a largura da tela */
   }
 }
